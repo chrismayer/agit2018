@@ -30,6 +30,12 @@
         '../shared/lib/reveal.js-3.6.0/css/print/pdf.css' :
         '../shared/lib/reveal.js-3.6.0/css/print/paper.css';
       document.getElementsByTagName( 'head' )[0].appendChild( link );
+
+      var linkCustomPrint = document.createElement( 'link' );
+      linkCustomPrint.rel = 'stylesheet';
+      linkCustomPrint.type = 'text/css';
+      linkCustomPrint.href = '../shared/css/meggsimum-print.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( linkCustomPrint );
     </script>
 
   </head>
@@ -95,7 +101,7 @@
           <h2>meggsimum</h2>
           <div class="split-info">
             <div class="part" style="width:35%">
-              <img src="../shared/img/meggsimum-logo.png" class="plain" width="200"/>
+              <img src="../shared/img/meggsimum-logo-s-rgb-500.png" class="plain" />
               <br /><br />
               <a class="github" href="https://github.com/meggsimum/">@meggsimum</a><br />
               <a class="twitter" href="https://twitter.com/meggsimum/">@meggsimum</a>

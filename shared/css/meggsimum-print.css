@@ -1,0 +1,11 @@
+
+.slide {
+  background-image: unset;
+}
+
+.slide-background {
+  background-image: url(../img/meggsimum-icon-rw-150.png);
+  background-repeat: no-repeat;
+  background-position: 1% 99% !important;
+  background-size: auto !important;
+}
