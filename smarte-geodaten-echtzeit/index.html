@@ -31,6 +31,12 @@
         '../shared/lib/reveal.js-3.6.0/css/print/pdf.css' :
         '../shared/lib/reveal.js-3.6.0/css/print/paper.css';
       document.getElementsByTagName( 'head' )[0].appendChild( link );
+
+      var linkCustomPrint = document.createElement( 'link' );
+      linkCustomPrint.rel = 'stylesheet';
+      linkCustomPrint.type = 'text/css';
+      linkCustomPrint.href = '../shared/css/meggsimum-print.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( linkCustomPrint );
     </script>
 
   </head>
@@ -71,7 +77,7 @@
             <div class="part" style="width:35%">
               <img src="../shared/img/chris-mayer.jpg" class="plain" width="200"/><br />
               <small>
-                <a class="email" href="mailto:chris@meggsimum">chris@meggsimum.de</a><br />
+                <a class="email" href="mailto:chris@meggsimum.de">chris@meggsimum.de</a><br />
                 <a class="github" href="https://github.com/chrismayer/">@chrismayer</a><br />
                 <a class="twitter" href="https://twitter.com/geofootballer/">@geofootballer</a><br />
               </small><br />
@@ -93,22 +99,66 @@
 
         <section id="about-company-meggsimum">
           <h2>meggsimum</h2>
+          <!-- <h2><img src="../shared/img/meggsimum-logo-s-rgb-500.png" class="plain" /></h2> -->
           <div class="split-info">
             <div class="part" style="width:35%">
-              <img src="../shared/img/meggsimum-logo.png" class="plain" width="200"/>
+              <img src="../shared/img/meggsimum-logo-s-rgb-500.png" class="plain" />
               <br /><br />
-              <a class="github" href="https://github.com/meggsimum/">@meggsimum</a><br />
-              <a class="twitter" href="https://twitter.com/meggsimum/">@meggsimum</a>
+              <a class="github" style="font-size: smaller;" href="https://github.com/meggsimum/">@meggsimum</a><br />
+              <a class="twitter" style="font-size: smaller;" href="https://twitter.com/meggsimum/">@meggsimum</a>
             </div>
             <div class="part" style="width:60%">
               <div class="enumeration">
                 <ul>
-                  <li><a href="https://meggsimum.de/">meggsimum.de</a></li>
+                  <li><a href="https://meggsimum.de/">www.meggsimum.de</a></li>
                   <li>Dienstleistungen im Bereich GIS, Webmapping &amp; GDI</li>
                   <li>Maßgeschneiderte WebGIS-Lösungen</li>
                   <li>Softwarekonzepte und Softwareentwicklung</li>
                   <li>Geodaten</li>
                   <li>Beratung und Schulung</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div style="clear:both"></div>
+        </section>
+
+        <section id="author-dr-stefan-jaeger">
+          <h2>Dr. Stefan Jäger</h2>
+          <div class="split-info">
+            <div class="part" style="width:35%">
+              <img src="./img/sj.jpeg" class="plain" width="200"/><br />
+              <small>
+                <a class="email" href="mailto:sj@geomer.de">sj@geomer.de</a><br />
+                <!-- <a class="github" href="https://github.com/chrismayer/">@chrismayer</a><br /> -->
+                <a class="twitter" href="https://twitter.com/pemburusj/">@pemburusj</a><br />
+              </small><br />
+            </div>
+            <div class="part"  style="width:60%">
+              <div class="enumeration">
+                <ul>
+                  <li>TODO</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div style="clear:both"></div>
+        </section>
+
+        <section id="about-company-geomer">
+          <h2>geomer GmbH</h2>
+          <div class="split-info">
+            <div class="part" style="width:35%">
+              <img src="./img/logo-geomer.png" class="plain" />
+              <br /><br />
+              <!-- <a class="github" style="font-size: smaller;" href="https://github.com/meggsimum/">@meggsimum</a><br /> -->
+              <a class="twitter" style="font-size: smaller; color:#006ca2" href="https://twitter.com/meggsimum/">@geomerGmbH</a>
+            </div>
+            <div class="part" style="width:60%">
+              <div class="enumeration">
+                <ul>
+                  <li><a style="color:#006ca2" href="https://www.geomer.de/">www.geomer.de</a></li>
+                  <li>TODO</li>
                 </ul>
               </div>
             </div>
@@ -128,28 +178,39 @@
 
         <section id="imprint">
           <h2>Impressum</h2>
-          <h4>Autor</h4>
+          <h4>Autoren</h4>
           <div style="">
-            <address style="">
-              <strong>Christian Mayer</strong><br />
-              <span style="font-size: smaller;">
-              meggsimum Geoinformatik<br />
-              Hauptstraße 165a<br />
-              67125 Dannstadt-Schauernheim<br />
-              chris@meggsimum.de
-              </span>
-            </address>
+              <address style="width: 50%; float: left; text-align: left">
+                  <strong>Christian Mayer</strong><br />
+                  <span style="font-size: smaller;">
+                      meggsimum - Büro für Geoinformatik<br />
+                      Hauptstraße 165a<br />
+                      67125 Dannstadt-Schauernheim<br />
+                      info@meggsimum.de
+                  </span>
+              </address>
           </div>
-          <h4 style="margin-top: 20px;">Lizenz</h4>
+          <div style="width: 45%; float: right;">
+              <address style="text-align: right">
+                  <strong>Dr. Stefan Jäger</strong><br />
+                  <span style="font-size: smaller;">
+                      geomer GmbH<br />
+                      Im Breitspiel 11b<br />
+                      69126 Heidelberg<br />
+                      sj@geomer.de
+                  </span>
+              </address>
+          </div>
+          <h4 style="clear:both;">Lizenz</h4>
           <p id="license">
-            Diese Folien sind unter <a
-            href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>
-            veröffentlicht.
+              Diese Folien sind unter <a
+              href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>
+              veröffentlicht.
           </p>
           <p>
-            <a href="https://rawgit.com/chrismayer/fossgis2018/master/wegue-talk/index.html">Vortragsfolien</a>,
+            <a href="https://chrismayer.github.io/agit2018/smarte-geodaten-echtzeit/#/start">Vortragsfolien</a>,
             <a href="https://rawgit.com/chrismayer/fossgis2018/master/wegue-talk/wegue_webgis_mit_vue_und_ol.pdf">PDF-Version</a>,
-            <a href="https://github.com/chrismayer/fossgis2018">git repository</a>
+            <a href="https://github.com/chrismayer/agit2018">git repository</a>
           </p>
         </section>
 
