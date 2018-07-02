@@ -31,11 +31,13 @@
         '../shared/lib/reveal.js-3.6.0/css/print/paper.css';
       document.getElementsByTagName( 'head' )[0].appendChild( link );
 
-      var linkCustomPrint = document.createElement( 'link' );
-      linkCustomPrint.rel = 'stylesheet';
-      linkCustomPrint.type = 'text/css';
-      linkCustomPrint.href = '../shared/css/meggsimum-print.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( linkCustomPrint );
+      if (window.location.search.match( /print-pdf/gi )) {
+        var linkCustomPrint = document.createElement( 'link' );
+        linkCustomPrint.rel = 'stylesheet';
+        linkCustomPrint.type = 'text/css';
+        linkCustomPrint.href = '../shared/css/meggsimum-print.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( linkCustomPrint );
+      }
     </script>
 
   </head>
@@ -43,7 +45,6 @@
 
 
 <!-- BEGIN OF SLIDES -->
-
 
     <div class="reveal">
       <div class="slides">
@@ -187,7 +188,7 @@
           <h2>OpenLayers</h2>
           <blockquote>
             A high-performance, feature-packed library for all your mapping needs.
-            <footer>&mdash; <cite><a href="https://openlayers.org/">openlayers.org, 14. März 2018</a></cite></footer>
+            <footer>&mdash; <cite><a href="https://openlayers.org/">openlayers.org, 02. Juli 2018</a></cite></footer>
           </blockquote>
           <ul>
             <li>JavaScript Mapping-Bibliothek</li>
