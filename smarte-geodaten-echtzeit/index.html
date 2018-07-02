@@ -32,11 +32,14 @@
         '../shared/lib/reveal.js-3.6.0/css/print/paper.css';
       document.getElementsByTagName( 'head' )[0].appendChild( link );
 
-      var linkCustomPrint = document.createElement( 'link' );
-      linkCustomPrint.rel = 'stylesheet';
-      linkCustomPrint.type = 'text/css';
-      linkCustomPrint.href = '../shared/css/meggsimum-print.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( linkCustomPrint );
+      if (window.location.search.match( /print-pdf/gi )) {
+        var linkCustomPrint = document.createElement( 'link' );
+        linkCustomPrint.rel = 'stylesheet';
+        linkCustomPrint.type = 'text/css';
+        linkCustomPrint.href = '../shared/css/meggsimum-print.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( linkCustomPrint );
+      }
+
     </script>
 
   </head>
@@ -170,6 +173,116 @@
             </div>
           </div>
           <div style="clear:both"></div>
+        </section>
+
+        <section>
+          <h2>Das Projekt sd-kama</h2>
+          <ul>
+            <li>
+              <span style="font-weight:bold">S</span>mart <span style="font-weight:bold">D</span>ata im <span style="font-weight:bold">Ka</span>tastrophen<span style="font-weight:bold">ma</span>nagement
+            </li>
+            <li><a href="https://www.sd-kama.de">www.sd-kama.de</a></li>
+            <li>Verantwortliche müssen schnell und zielgerichtet handeln</li>
+            <li>Minimierung von Schäden an Leib und Leben, an Vermögenswerten und Infrastruktur</li>
+            <li>Verantwortliche müssen schnell und zielgerichtet handeln</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Das Projekt sd-kama</h2>
+          <ul>
+            <li>Schaffung Überblick über die Lage vor Ort</li>
+            <li>Echtzeit Lageinformationssystem im Hochwasser-Krisenfall</li>
+            <li>Heterogene Daten und Informationen heterogen aus</li>
+            <ul>
+              <li>Diversen Systemen des Anwendungspartners (HSZ Köln)</li>
+              <li>Diversen Formaten</li>
+              <li>Teilweise manuelle Aufbereitung</li>
+            </ul>
+          </ul>
+        </section>
+
+        <section>
+          <h2>sd-kama-Plattform</h2>
+          <ul>
+            <li>Integration, Analyse und Information in (R)Echtzeit</li>
+            <li>systematische Integration, Prozessierung und Auswertung großer Datenmengen in Echtzeit</li>
+            <li>Smart-Data-Technologie zur Analyse heterogenen Datenquellen</li>
+            <li>Nutzergerechte Aufbereitung</li>
+            <li>WebGIS als zentrale Visualisierungsplattform</li>
+            <li>Entscheidungsunterstützungssystem</li>
+          </ul>
+        </section>
+
+        <section
+          data-background-image="./img/sd-kama-sensors1.png"
+          data-background-size="contain">
+        </section>
+
+        <section
+          data-background-image="./img/sd-kama-sensors2.png"
+          data-background-size="contain">
+        </section>
+
+        <!-- <section
+          data-background-image="./img/sd-kama-start.jpg"
+          data-background-size="80% auto">
+        </section> -->
+
+        <section
+          data-background-image="./img/sd-kama-start2.jpg"
+          data-background-size="99% auto">
+        </section>
+
+        <section
+          data-background-image="./img/sd-kama-timeline.png"
+          data-background-size="90% auto">
+          <h2 style="position: fixed; top: 0; left: 15%">Ereignis Zeitleiste</h2>
+        </section>
+
+        <section
+          data-background-image="./img/sd-kama-physio.png"
+          data-background-size="90% auto">
+          <h2 style="position: fixed; top: 0; left: 35%">Physio Daten</h2>
+        </section>
+
+        <!-- <section
+          data-background-image="./img/sd-kama-heatmap.png"
+          data-background-size="90% auto">
+          <h2 style="position: fixed; top: 0; left: 35%">Physio Daten</h2>
+        </section> -->
+
+        <section
+          data-background-image="./img/sd-kama-measures1.png"
+          data-background-size="90% auto">
+          <h2 style="position: fixed; top: 0; left: 15%">Maßnahmenverwaltung</h2>
+        </section>
+
+        <!-- <section
+          data-background-image="img/sd-kama-measures.png"
+          data-background-size="90% auto">
+        </section>
+        <section
+          data-background-image="img/sd-kama-measures2.png"
+          data-background-size="auto auto">
+        </section> -->
+
+        <section
+          data-background-image="./img/sd-kama-mediacenter.png"
+          data-background-size="90% auto">
+          <h2 style="position: fixed; top: 0; left: 25%">Mediencenter</h2>
+        </section>
+
+        <section
+          data-background-image="./img/sd-kama-damage1.png"
+          data-background-size="90% auto">
+          <h2 style="position: fixed; top: 0; left: 25%">Schadenspotential</h2>
+        </section>
+
+        <section
+          data-background-image="./img/sd-kama-accessibility.jpg"
+          data-background-size="90% auto">
+          <h2 style="position: fixed; top: 0; left: 25%">Erreichbarkeit</h2>
         </section>
 
         <section id="thanks-questions">
